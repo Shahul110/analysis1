@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from body_module  import run_body_analysis   # ← your function (returns dict)
+#from body_module  import run_body_analysis   # ← your function (returns dict)
 from cloth_module import run_cloth_analysis  # ← must also return dict
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ def home():
 @app.route("/analyze")
 def analyze():
     # ① body analysis (blocks until finished)
-    body_scores = run_body_analysis()          # returns dict
+    body_scores = run_cloth_analysis()          # returns dict
 
     # ② cloth analysis (blocks until finished)
     cloth_scores = run_cloth_analysis()        # returns dict
