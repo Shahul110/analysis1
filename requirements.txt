@@ -1,0 +1,13 @@
+# ─── core web framework ───────────────────────
+Flask
+
+# ─── production WSGI server ───────────────────
+gunicorn
+
+# ─── computer‑vision / ML stack ───────────────
+opencv-python-headless   # headless version (no GUI deps)
+mediapipe
+ultralytics              # YOLOv8
+
+# ─── math / array utils ───────────────────────
+numpy
