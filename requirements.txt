@@ -1,6 +1,6 @@
 flask
 gunicorn
-mediapipe==0.10.9
+mediapipe==0.10.8
 opencv-python
 numpy
 ultralytics
