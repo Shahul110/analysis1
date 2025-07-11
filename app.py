@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 
 # Initialize the camera
-camera = cv2.VideoCapture(0)  # Use 0 for the default webcam
+camera = cv2.VideoCapture("hi.mp4")  # Use 0 for the default webcam
 
 def generate_frames():
     while True:
