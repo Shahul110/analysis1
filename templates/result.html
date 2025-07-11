@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Persona Result</title>
+</head>
+<body style="text-align:center;margin-top:2em">
+  <h1>🎯 Combined Persona Scores</h1>
+  <table border="1" cellpadding="6" style="margin:auto">
+    <tr><th>Persona</th><th>Score</th></tr>
+    {% for persona, score in combined.items() %}
+      <tr><td>{{ persona }}</td><td>{{ "%.2f"|format(score) }}</td></tr>
+    {% endfor %}
+  </table>
+
+  <h2 style="margin-top:1.5em">
+      ✅ Final Persona: {{ final_persona }} ({{ final_score }})
+  </h2>
+
+  <a href="{{ url_for('home') }}">⟲ Run Again</a>
+</body>
+</html>
