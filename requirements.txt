@@ -1,6 +1,6 @@
-Flask
+flask
 gunicorn
-opencv-python-headless
-ultralytics
-mediapipe==0.10.0
+mediapipe==0.10.9
+opencv-python
 numpy
+ultralytics
